@@ -15,6 +15,10 @@ export class Welcome {
     return `${this.firstName} ${this.lastName}`;
   }
 
+  attached(){
+    $(this.myElement).collapsible();
+  }
+
   submit() {
     this.previousValue = this.fullName;
     alert(`Welcome, ${this.fullName}!`);
